@@ -13,4 +13,8 @@ fn main() {
         arr.mapv_inplace(|x| x / norm);
         norm
     }
+    let x = array![1., 2., 3., 4., 5.];
+    println!("||x||_2 = {}", l2_norm(x.clone()));
+    println!("||x||_1 = {}", l1_norm(x.clone()));
+    println!("Normalizing x yields {:?}", normalize(x));
 }
